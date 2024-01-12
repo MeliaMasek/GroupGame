@@ -1,0 +1,55 @@
+Potion Maker Group Game
+
+Scripts
+	Character movement script
+	Trigger enter events
+	Scriptable objects 
+		coins
+		potion items
+			Spider
+			Tongue
+			Lizard tails
+			Mushroom
+			Berry
+			Eye
+			Bone
+	Cooroutine for order of adding?
+
+Animations
+		Character actions
+		Ingredients movement
+		End creation scene 
+			
+UI
+	Pause
+	Inventory
+	Home
+	Dictionary
+		infographic cards
+
+Minigame
+	Moving of camera?
+	Different cameras in same scene?
+	
+	Chopping
+	Stirring
+	Liquid adding
+		different properties?
+
+Input system 
+	d-pad or swipe?
+
+
+Task Delegations
+Melia
+	Upload all kitchen assets
+	Arrange kitchen layout?
+	Fix sable model
+	Accept pull requests 
+
+Kaleah
+	Excel sheet of poition creation
+
+Kaitlyn
+	Upload assets
+	
