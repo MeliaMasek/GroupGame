@@ -1,0 +1,161 @@
+Combinations with 1 ingredient:
+
+Spider
+Tongue
+Lizard Tails
+Mushrooms
+Berries
+Eyes
+Bones
+
+Combinations with 2 ingredients:
+
+Spider + Tongue
+Spider + Lizard Tails
+Spider + Mushrooms
+Spider + Berries
+Spider + Eyes
+Spider + Bones
+Tongue + Lizard Tails
+Tongue + Mushrooms
+Tongue + Berries
+Tongue + Eyes
+Tongue + Bones
+Lizard Tails + Mushrooms
+Lizard Tails + Berries
+Lizard Tails + Eyes
+Lizard Tails + Bones
+Mushrooms + Berries
+Mushrooms + Eyes
+Mushrooms + Bones
+Berries + Eyes
+Berries + Bones
+Eyes + Bones
+Spider + Spider
+Tongue + Tongue
+Lizard Tails + Lizard Tails
+Mushrooms + Mushrooms
+Berries + Berries
+Eyes + Eyes
+Bones + Bones
+
+Combinations with 3 ingredients:
+
+Spider + Tongue + Lizard Tails
+Spider + Tongue + Mushrooms
+Spider + Tongue + Berries
+Spider + Tongue + Eyes
+Spider + Tongue + Bones
+Spider + Lizard Tails + Mushrooms
+Spider + Lizard Tails + Berries
+Spider + Lizard Tails + Eyes
+Spider + Lizard Tails + Bones
+Spider + Mushrooms + Berries
+Spider + Mushrooms + Eyes
+Spider + Mushrooms + Bones
+Spider + Berries + Eyes
+Spider + Berries + Bones
+Spider + Eyes + Bones
+Tongue + Lizard Tails + Mushrooms
+Tongue + Lizard Tails + Berries
+Tongue + Lizard Tails + Eyes
+Tongue + Lizard Tails + Bones
+Tongue + Mushrooms + Berries
+Tongue + Mushrooms + Eyes
+Tongue + Mushrooms + Bones
+Tongue + Berries + Eyes
+Tongue + Berries + Bones
+Tongue + Eyes + Bones
+Lizard Tails + Mushrooms + Berries
+Lizard Tails + Mushrooms + Eyes
+Lizard Tails + Mushrooms + Bones
+Lizard Tails + Berries + Eyes
+Lizard Tails + Berries + Bones
+Lizard Tails + Eyes + Bones
+Mushrooms + Berries + Eyes
+Mushrooms + Berries + Bones
+Mushrooms + Eyes + Bones
+Berries + Eyes + Bones
+Spider + Spider + Spider
+Tongue + Tongue + Tongue
+Lizard Tails + Lizard Tails + Lizard Tails
+Mushrooms + Mushrooms + Mushrooms
+Berries + Berries + Berries
+Eyes + Eyes + Eyes
+Bones + Bones + Bones
+
+Combinations with 4 ingredients:
+
+Spider + Tongue + Lizard Tails + Mushrooms
+Spider + Tongue + Lizard Tails + Berries
+Spider + Tongue + Lizard Tails + Eyes
+Spider + Tongue + Lizard Tails + Bones
+Spider + Tongue + Mushrooms + Berries
+Spider + Tongue + Mushrooms + Eyes
+Spider + Tongue + Mushrooms + Bones
+Spider + Tongue + Berries + Eyes
+Spider + Tongue + Berries + Bones
+Spider + Tongue + Eyes + Bones
+Spider + Lizard Tails + Mushrooms + Berries
+Spider + Lizard Tails + Mushrooms + Eyes
+Spider + Lizard Tails + Mushrooms + Bones
+Spider + Lizard Tails + Berries + Eyes
+Spider + Lizard Tails + Berries + Bones
+Spider + Lizard Tails + Eyes + Bones
+Spider + Mushrooms + Berries + Eyes
+Spider + Mushrooms + Berries + Bones
+Spider + Mushrooms + Eyes + Bones
+Spider + Berries + Eyes + Bones
+Tongue + Lizard Tails + Mushrooms + Berries
+Tongue + Lizard Tails + Mushrooms + Eyes
+Tongue + Lizard Tails + Mushrooms + Bones
+Tongue + Lizard Tails + Berries + Eyes
+Tongue + Lizard Tails + Berries + Bones
+Tongue + Lizard Tails + Eyes + Bones
+Tongue + Mushrooms + Berries + Eyes
+Tongue + Mushrooms + Berries + Bones
+Tongue + Mushrooms + Eyes + Bones
+Tongue + Berries + Eyes + Bones
+Lizard Tails + Mushrooms + Berries + Eyes
+Lizard Tails + Mushrooms + Berries + Bones
+Lizard Tails + Mushrooms + Eyes + Bones
+Lizard Tails + Berries + Eyes + Bones
+Mushrooms + Berries + Eyes + Bones
+Spider + Spider + Spider + Spider
+Tongue + Tongue + Tongue + Tongue
+Lizard Tails + Lizard Tails + Lizard Tails + Lizard Tails
+Mushrooms + Mushrooms + Mushrooms + Mushrooms
+Berries + Berries + Berries + Berries
+Eyes + Eyes + Eyes + Eyes
+Bones + Bones + Bones + Bones
+
+Combinations with 5 ingredients:
+
+Spider + Tongue + Lizard Tails + Mushrooms + Berries
+Spider + Tongue + Lizard Tails + Mushrooms + Eyes
+Spider + Tongue + Lizard Tails + Mushrooms + Bones
+Spider + Tongue + Lizard Tails + Berries + Eyes
+Spider + Tongue + Lizard Tails + Berries + Bones
+Spider + Tongue + Lizard Tails + Eyes + Bones
+Spider + Tongue + Mushrooms + Berries + Eyes
+Spider + Tongue + Mushrooms + Berries + Bones
+Spider + Tongue + Mushrooms + Eyes + Bones
+Spider + Tongue + Berries + Eyes + Bones
+Spider + Lizard Tails + Mushrooms + Berries + Eyes
+Spider + Lizard Tails + Mushrooms + Berries + Bones
+Spider + Lizard Tails + Mushrooms + Eyes + Bones
+Spider + Lizard Tails + Berries + Eyes + Bones
+Spider + Mushrooms + Berries + Eyes + Bones
+Tongue + Lizard Tails + Mushrooms + Berries + Eyes
+Tongue + Lizard Tails + Mushrooms + Berries + Bones
+Tongue + Lizard Tails + Mushrooms + Eyes + Bones
+Tongue + Lizard Tails + Berries + Eyes + Bones
+Tongue + Mushrooms + Berries + Eyes + Bones
+Lizard Tails + Mushrooms + Berries + Eyes + Bones
+Spider + Spider + Spider + Spider + Spider
+Tongue + Tongue + Tongue + Tongue + Tongue
+Lizard Tails + Lizard Tails + Lizard Tails + Lizard Tails + Lizard Tails
+Mushrooms + Mushrooms + Mushrooms + Mushrooms + Mushrooms
+Berries + Berries + Berries + Berries + Berries
+Eyes + Eyes + Eyes + Eyes + Eyes
+Bones + Bones + Bones + Bones + Bones
