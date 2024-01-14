@@ -3,7 +3,22 @@ guid: 467530ef7ec1d844cabb5235d3f2ba45
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: CupboardsMat
+    second: {fileID: 2100000, guid: 00c65623489e02b449ce75ffcaa5fda4, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cupboards_Knob1Mat
+    second: {fileID: 2100000, guid: f48c9af92aab40c4fb2de7b3e261e6b6, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Cupboards_KnobMat
+    second: {fileID: 2100000, guid: f48c9af92aab40c4fb2de7b3e261e6b6, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

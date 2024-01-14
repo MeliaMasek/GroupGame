@@ -3,7 +3,42 @@ guid: b0a3187d7b7076e438d65f57bd760059
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Counter_GraniteMat
+    second: {fileID: 2100000, guid: 2793ea845025e944f9ac0a7ec7beee4d, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Knob_KnobsMat
+    second: {fileID: 2100000, guid: 888dc182bfb6bfd44a495bde8a64afda, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Knobs_Knob1Mat
+    second: {fileID: 2100000, guid: 888dc182bfb6bfd44a495bde8a64afda, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Knobs_Knob2Mat
+    second: {fileID: 2100000, guid: 888dc182bfb6bfd44a495bde8a64afda, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Knobs_Knob3Mat
+    second: {fileID: 2100000, guid: 888dc182bfb6bfd44a495bde8a64afda, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Knobs_Knob4Mat
+    second: {fileID: 2100000, guid: 888dc182bfb6bfd44a495bde8a64afda, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Wood_CounterMat
+    second: {fileID: 2100000, guid: 063d9d314566b924e94f0f2ee3b5c1ff, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
