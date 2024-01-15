@@ -3,7 +3,22 @@ guid: 086249fda35e933409615085e94000b9
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Fridge3_pasted__Handles2
+    second: {fileID: 2100000, guid: c622707d4ea110348995f9b6c9dccf28, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__Fridge4
+    second: {fileID: 2100000, guid: 37b3414ec2e5b804b94e702d65559bb7, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: pasted__Glass
+    second: {fileID: 2100000, guid: 93e6d77495b6bf4479a9ac2dc4736d1f, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

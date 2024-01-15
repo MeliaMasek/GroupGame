@@ -6,7 +6,27 @@ ModelImporter:
   - first:
       74: 1827226128182048838
     second: Take 001
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Counter11_Blue
+    second: {fileID: 2100000, guid: 0bf06936d3c35e74f950e3b4257ee7e9, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: Default_Material
+    second: {fileID: 2100000, guid: 3def983cf51e1d94fa6248f7f92011bc, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: SingleCabinet_Red
+    second: {fileID: 2100000, guid: e75534d6d3a613a4ab37593f9a9a762b, type: 2}
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: lambert4
+    second: {fileID: 2100000, guid: 04cd0091e20e09b4789fb3bd47e06c22, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0

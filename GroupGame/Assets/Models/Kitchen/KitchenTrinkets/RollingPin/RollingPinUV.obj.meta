@@ -3,7 +3,12 @@ guid: a1947c7a830c2a44e9ab3fa0e8b0f30e
 ModelImporter:
   serializedVersion: 22103
   internalIDToNameTable: []
-  externalObjects: {}
+  externalObjects:
+  - first:
+      type: UnityEngine:Material
+      assembly: UnityEngine.CoreModule
+      name: RollingPin1Mat
+    second: {fileID: 2100000, guid: 2b3ad339de3eac1498a3efe8d4ce1e71, type: 2}
   materials:
     materialImportMode: 2
     materialName: 0
