@@ -10,10 +10,10 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 1c950878a92ac714cb145efc294f15d8, type: 3}
-  m_Name: Item2
+  m_Name: Item1
   m_EditorClassIdentifier: 
   ID: 0
-  displayName: 
+  displayName: Eye
   description: 
-  icon: {fileID: 0}
-  maxStackSize: 0
+  icon: {fileID: 21300000, guid: 6aab6b1613d012b4195ae3067a2472ae, type: 3}
+  maxStackSize: 5
