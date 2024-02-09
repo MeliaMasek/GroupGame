@@ -7,7 +7,7 @@ public class MouseItemData : MonoBehaviour
 {
     public Image itemSprite;
     public Text ItemCount;
-
+    public InventorySlot InventorySlot;
     private void Awake()
     {
         itemSprite.color = Color.clear;

@@ -7,6 +7,7 @@ public class PauseMenu : MonoBehaviour
     [SerializeField] private GameObject pauseMenu;
     [SerializeField] private GameObject mainMenu;
     [SerializeField] private GameObject shopMenu; 
+    [SerializeField] private GameObject craftingMenu; 
 
     private int sceneToContinue;
     private int currentSceneIndex;
@@ -43,6 +44,17 @@ public class PauseMenu : MonoBehaviour
     public void ShopOff()
     {
         shopMenu.SetActive(false);
+        Time.timeScale = 0f;
+    }
+    public void CraftingOn()
+    {
+        craftingMenu.SetActive(true);
+        Time.timeScale = 1f;
+    }
+    
+    public void CraftingOff()
+    {
+        craftingMenu.SetActive(false);
         Time.timeScale = 0f;
     }
 }

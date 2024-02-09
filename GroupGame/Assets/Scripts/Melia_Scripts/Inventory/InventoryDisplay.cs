@@ -32,5 +32,6 @@ public abstract class InventoryDisplay : MonoBehaviour
     public void SlotClicked(SlotUI clickedSlot)
     {
         Debug.Log("Slot Clicked");
+        //  if (clickedSlot.AssignedInventorySlot.ItemData != null && 
     }
 }

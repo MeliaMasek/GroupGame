@@ -62,6 +62,9 @@ ExportedObj/
 *.pdb
 *.opendb
 
+*/logs/
+*logs
+
 VR_2024/Logs/AssetImportWorker0.log
 
 VR_2024/Logs/AssetImportWorker1.log
