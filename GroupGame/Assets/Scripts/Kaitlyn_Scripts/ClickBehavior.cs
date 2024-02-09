@@ -6,8 +6,10 @@ using UnityEngine.Events;
 public class ClickBehavior : MonoBehaviour
 {
     public UnityEvent onClickEvent;
-    private void OnMouseDown()
+
+    public void OnMouseDown()
     {
         onClickEvent.Invoke();
     }
+
 }
