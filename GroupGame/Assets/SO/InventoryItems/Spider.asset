@@ -15,5 +15,5 @@ MonoBehaviour:
   ID: 0
   displayName: Spider
   description: 
-  icon: {fileID: 21300000, guid: 8faeb434afd4c1c4da25d2616a202156, type: 3}
+  icon: {fileID: 21300000, guid: 61dcb942da2f6a8499836296cde0e17b, type: 3}
   maxStackSize: 5
