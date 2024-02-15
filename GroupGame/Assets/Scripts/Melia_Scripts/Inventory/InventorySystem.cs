@@ -39,9 +39,12 @@ public class InventorySystem
         
         if (HasFreeSlot(out InventorySlot freeSlot)) //gets first available slot
         {
-            freeSlot.UpdateInventorySlot(itemToAdd, amountToAdd);
-            OnInventorySlotChanged?.Invoke(freeSlot);
-            return true;
+            if (freeSlot.RoomLeftInStack(amountToAdd))
+            {
+                freeSlot.UpdateInventorySlot(itemToAdd, amountToAdd);
+                OnInventorySlotChanged?.Invoke(freeSlot);
+                return true;   
+            }
         }
         return false;
     }
