@@ -1,3 +1,4 @@
+using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.EventSystems;
 
@@ -7,16 +8,44 @@ public class GameobjectInteractionBehaviour : MonoBehaviour, IPointerClickHandle
     [SerializeField] private GameObject CraftingMenu;
 
     public void OnPointerClick(PointerEventData eventData)
+    {
+        if (eventData.button == PointerEventData.InputButton.Left)
         {
-            if (eventData.button == PointerEventData.InputButton.Left)
-            {
-                Debug.Log("Clicked " + name);
-                Crafting();
-            }
+            Debug.Log("Clicked " + name);
+            Crafting();
         }
+    }
+
     public void Crafting()
     {
         CraftingMenu.SetActive(true);
         Time.timeScale = 0f;
     }
+
+    /*
+    public void CraftPotion()
+    {
+        // Assuming you have a reference to the PotionCrafting script
+        if (playerInventory != null)
+        {
+            // Get the selected ingredients from the player's inventory
+            List<Ingredient> selectedIngredients = playerInventory.GetSelectedIngredients();
+
+            // Call the crafting method from PotionCrafting script to combine ingredients
+            Potion craftedPotion = PotionCrafting.Instance.CombineIngredients(selectedIngredients);
+
+            if (craftedPotion != null)
+            {
+                // Success: Display the crafted potion to the player
+                Debug.Log("Crafted potion: " + craftedPotion.potionName);
+                // Optionally, you can do something with the crafted potion, such as adding it to the player's inventory or applying its effects
+            }
+            else
+            {
+                // Error: Display a message to the player indicating no valid combination found
+                Debug.Log("Invalid combination!");
+            }
+        }
+    }
+    */
 }
