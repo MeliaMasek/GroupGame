@@ -2,31 +2,44 @@ using System.Collections.Generic;
 using UnityEngine;
 
 //Code borrowed and Modified by Dan Pos off of the inventory system series from youtube https://www.youtube.com/playlist?list=PL-hj540P5Q1hLK7NS5fTSNYoNJpPWSL24
-
 public class StaticInventoryDisplay : InventoryDisplay
 {
     [SerializeField] private InventoryHolder inventoryHolder;
     [SerializeField] private SlotUI[] slotArray;
-    protected override void Start()
+
+    private void OnEnable()
     {
-        base.Start();
+        PlayerInventoryHolder.OnPlayerInventoryChanged += RefreshStaticDisplay;
+    }
+
+    private void OnDisable()
+    {
+        PlayerInventoryHolder.OnPlayerInventoryChanged -= RefreshStaticDisplay;
+    }
+
+    private void RefreshStaticDisplay()
+    {
         if (inventoryHolder != null)
         {
-            inventorySystem = inventoryHolder.InventorySystem;
+            inventorySystem = inventoryHolder.PrimaryInventorySystem;
             inventorySystem.OnInventorySlotChanged += UpdateSlot;
         }
         else Debug.LogWarning($"no inventory assigned to this {this.gameObject}");
         
-        AssignSlot(inventorySystem);
+        AssignSlot(inventorySystem, offset: 0);
     }
     
-    public override void AssignSlot(InventorySystem invToDisplay)
+    protected override void Start()
+    {
+        base.Start();
+        RefreshStaticDisplay();
+    }
+    
+    public override void AssignSlot(InventorySystem invToDisplay, int offset)
     {
         slotDictionary = new Dictionary<SlotUI, InventorySlot>();
-
-        if (slotArray.Length != inventorySystem.InventorySize) //Debug.Log($"inventory slots dont match on {this.gameObject} ");
         
-            for (int i = 0; i < inventorySystem.InventorySize; i++)
+            for (int i = 0; i < inventoryHolder.Offset; i++)
             {
                 slotDictionary.Add(slotArray[i], inventorySystem.InventorySlots[i]);
                 slotArray[i].Init(inventorySystem.InventorySlots[i]);

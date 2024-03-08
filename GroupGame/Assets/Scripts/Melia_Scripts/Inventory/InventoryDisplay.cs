@@ -3,7 +3,6 @@ using UnityEngine;
 using UnityEngine.InputSystem;
 
 //Code borrowed and Modified by Dan Pos off of the inventory system series from youtube https://www.youtube.com/playlist?list=PL-hj540P5Q1hLK7NS5fTSNYoNJpPWSL24
-
 public abstract class InventoryDisplay : MonoBehaviour
 {
     [SerializeField] MouseItemData mouseInventoryItem;
@@ -18,7 +17,7 @@ public abstract class InventoryDisplay : MonoBehaviour
 
     }
 
-    public abstract void AssignSlot(InventorySystem invToDisplay);
+    public abstract void AssignSlot(InventorySystem invToDisplay, int offset);
 
     protected virtual void UpdateSlot(InventorySlot updatedSlot)
     {
