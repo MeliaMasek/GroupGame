@@ -4,11 +4,13 @@ using UnityEngine.InputSystem;
 //Code borrowed and Modified by Dan Pos off of the inventory system series from youtube https://www.youtube.com/playlist?list=PL-hj540P5Q1hLK7NS5fTSNYoNJpPWSL24
 public class InventoryUIManager : MonoBehaviour
 {
-    public DynamicInventoryDisplay inventoryPanel;
-    public int inventorySize = 10;
+    public DynamicInventoryDisplay InventoryPanel;
+    //public DynamicInventoryDisplay PlayerBackpackPanel;
+    //public int inventorySize = 10;
     private void Awake()
     {
-        inventoryPanel.gameObject.SetActive(false);
+        InventoryPanel.gameObject.SetActive(false);
+        //PlayerBackpackPanel.gameObject.SetActive(false);
     }
 
     private void OnEnable()
@@ -23,12 +25,12 @@ public class InventoryUIManager : MonoBehaviour
 
     private void Update()
     {
-        if (inventoryPanel.gameObject.activeInHierarchy && Keyboard.current.escapeKey.wasPressedThisFrame) inventoryPanel.gameObject.SetActive(false);
+        if (InventoryPanel.gameObject.activeInHierarchy && Keyboard.current.escapeKey.wasPressedThisFrame) InventoryPanel.gameObject.SetActive(false);
     }
 
-    void DisplayInventory(InventorySystem invToDisplay)
+    void DisplayInventory(InventorySystem invToDisplay, int offset)
     {
-        inventoryPanel.gameObject.SetActive(true);
-        inventoryPanel.RefreshDynamicInventory(invToDisplay);
+        InventoryPanel.gameObject.SetActive(true);
+        InventoryPanel.RefreshDynamicInventory(invToDisplay, offset);
     }
 }
