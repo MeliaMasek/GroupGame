@@ -1,14 +1,12 @@
-using System;
 using UnityEngine;
 
 [System.Serializable]
 
 //Code borrowed and Modified by Dan Pos off of the inventory system series from youtube https://www.youtube.com/playlist?list=PL-hj540P5Q1hLK7NS5fTSNYoNJpPWSL24
 
-public class InventorySlot : ISerializationCallbackReceiver
+public class InventorySlot
 {
-    [NonSerialized] private InventoryData itemData;
-    [SerializeField] private int itemID = -1;
+    [SerializeField] private InventoryData itemData;
     [SerializeField] private int stacksize;
     
     public InventoryData ItemData => itemData;
@@ -17,7 +15,6 @@ public class InventorySlot : ISerializationCallbackReceiver
     public InventorySlot(InventoryData source, int amount)
     {
         itemData = source;
-        itemID = itemData.ID;
         stacksize = amount;
     }
 
@@ -29,7 +26,6 @@ public class InventorySlot : ISerializationCallbackReceiver
     public void ClearSlot()
     {
         itemData = null;
-        itemID = -1;
         stacksize = -1;
     }
 
@@ -40,7 +36,6 @@ public class InventorySlot : ISerializationCallbackReceiver
         else
         {
             itemData = invSlot.itemData;
-            itemID = itemData.ID;
             stacksize = 0;
             AddToStack(invSlot.stacksize);
         }
@@ -49,7 +44,6 @@ public class InventorySlot : ISerializationCallbackReceiver
     public void UpdateInventorySlot(InventoryData data, int amount)
     {
         itemData = data;
-        itemID = itemData.ID;
         stacksize = amount;
     }
 
@@ -88,20 +82,6 @@ public class InventorySlot : ISerializationCallbackReceiver
         
         spiltStack = new InventorySlot(itemData, halfStack);
         return true;
-    }
-
-    public void OnBeforeSerialize()
-    {
-        
-    }
-
-    public void OnAfterDeserialize()
-    {
-        if (itemID == -1) return;
-        {
-            var db = Resources.Load<Database>("Database");
-            itemData = db.GetItem(itemID);
-        }
     }
 }
 
