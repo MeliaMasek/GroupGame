@@ -31,6 +31,7 @@ public class UniqueID : MonoBehaviour
         }
     }
 
+    [ContextMenu("Generate ID")]
     private void Generate()
     {
         id = Guid.NewGuid().ToString();

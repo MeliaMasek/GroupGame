@@ -5,6 +5,8 @@ using UnityEngine.InputSystem;
 public class PlayerInventoryHolder : InventoryHolder
 {
     public static UnityAction OnPlayerInventoryChanged;
+    
+    public static UnityAction<InventorySystem, int> OnPlayerBackpackDisplayRequested; 
 
     private void Start()
     {
@@ -22,7 +24,7 @@ public class PlayerInventoryHolder : InventoryHolder
 
     void Update()
     {
-        if (Keyboard.current.bKey.wasPressedThisFrame) OnDynamicInventoryDisplayRequested?.Invoke(primaryInventorySystem, offset);
+        if (Keyboard.current.bKey.wasPressedThisFrame) OnPlayerBackpackDisplayRequested?.Invoke(primaryInventorySystem, offset);
     }
     
     public bool AddItemToInventory(InventoryData data, int amount)

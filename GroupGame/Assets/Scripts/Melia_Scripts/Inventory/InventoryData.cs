@@ -11,4 +11,5 @@ public class InventoryData : ScriptableObject
     public string description;
     public Sprite icon;
     public int maxStackSize;
+    public int GoldValue;
  }

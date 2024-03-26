@@ -17,3 +17,4 @@ MonoBehaviour:
   description: 
   icon: {fileID: 21300000, guid: 6aab6b1613d012b4195ae3067a2472ae, type: 3}
   maxStackSize: 5
+  GoldValue: 10
