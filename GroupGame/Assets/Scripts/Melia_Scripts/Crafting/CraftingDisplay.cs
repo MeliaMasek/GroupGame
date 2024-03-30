@@ -27,9 +27,11 @@ public class CraftingDisplay : MonoBehaviour
     private int craftAmount = 1;
     private List<IngredientSlotUI> ingredientSlotsUI = new List<IngredientSlotUI>();
 
+    [SerializeField] private float addedTime;
+
     private CraftingBench craftingBench; 
     private CraftingRecipe chosenRecipe;
-    [SerializeField]private PlayerInventoryHolder playerInventoryHolder;
+    [SerializeField] public PlayerInventoryHolder playerInventoryHolder;
 
    private void Awake()
    {
@@ -171,6 +173,19 @@ public class CraftingDisplay : MonoBehaviour
        if (playerInventoryHolder.AddItemToInventory(chosenRecipe.CraftedItem, craftAmount))
        {
            Debug.Log("Crafted item added to inventory successfully.");
+           craftingBench.AddCraftedItem(chosenRecipe.CraftedItem);
+
+           CountdownTimer countdownTimer = FindObjectOfType<CountdownTimer>();
+           if (countdownTimer != null)
+           {
+               countdownTimer.countdownTime += addedTime;
+               countdownTimer.currentTime += addedTime;
+               Debug.Log("Added additional time to countdown. New currentTime: " + countdownTimer.currentTime);
+           }
+           else
+           {
+               Debug.LogWarning("Countdown timer not found.");
+           }
        }
        else
        {

@@ -7,7 +7,7 @@ public class SaveData
     public SerializableDictionary<string, ItemPickupSaveData> activeItems;
     public SerializableDictionary<string, InventorySaveData> chestDictionary;
     public SerializableDictionary<string, ShopSaveData> shopKeeperDictionary;
-
+    public float savedClockTime;
     public InventorySaveData playerInventory;
     
     public SaveData()

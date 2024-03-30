@@ -7,11 +7,12 @@ using UnityEngine.Events;
 public class CraftingBench : MonoBehaviour, IInteractable
 {
     [SerializeField] private List<CraftingRecipe> knownRecipe;
-    
+
     private PlayerInventoryHolder playerInventory;
     
+    private List<InventoryData> craftedItems = new List<InventoryData>(); // Define craftedItems here
+
     public List<CraftingRecipe> KnownRecipe => knownRecipe;
-    
     public static UnityAction<CraftingBench> OnCraftingBenchRequested;
 
     #region Interctable Interface
@@ -89,5 +90,20 @@ public class CraftingBench : MonoBehaviour, IInteractable
         {
             playerInventory.PrimaryInventorySystem.RemoveItemFromInv(ingredient.ItemRequired, ingredient.AmountRequired * craftAmount);
         }
+    }
+
+    public void AddCraftedItem(InventoryData craftedItem)
+    {
+        craftedItems.Add(craftedItem);
+    }
+
+    public void LoadCraftedItems(List<InventoryData> dataCraftedItems)
+    {
+        craftedItems = dataCraftedItems;
+    }
+
+    public List<InventoryData> GetCraftedItems()
+    {
+        return craftedItems;
     }
 }
