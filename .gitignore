@@ -61,6 +61,8 @@ ExportedObj/
 *.svd
 *.pdb
 *.opendb
+*.log
+*.dwlt
 
 */logs/
 *logs
