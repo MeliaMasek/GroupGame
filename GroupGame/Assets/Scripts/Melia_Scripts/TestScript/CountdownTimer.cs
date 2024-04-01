@@ -7,11 +7,13 @@ public class CountdownTimer : MonoBehaviour
 
     [SerializeField] private Text countdownText;
     public float currentTime;
+    [SerializeField] private GameObject endGameUI;
 
     void Start()
     {
         countdownText = GetComponent<Text>();
         currentTime = countdownTime;
+        endGameUI.SetActive(false);
     }
 
     void Update()
@@ -24,7 +26,20 @@ public class CountdownTimer : MonoBehaviour
 
         if (currentTime <= 0)
         {
+            currentTime = 0; // Ensure timer doesn't display negative values
+            countdownText.text = "00:00"; // Update UI to display 00:00
             Debug.Log("Countdown finished!");
+            TriggerEndGameUI(); // Call function to activate end game UI
         }
+    }
+    
+    void TriggerEndGameUI()
+    {
+        endGameUI.SetActive(true);
+    }
+    
+    public void ResetTimer()
+    {
+        currentTime = countdownTime;
     }
 }

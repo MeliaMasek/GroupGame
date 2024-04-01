@@ -12,6 +12,9 @@ public class ShopKeeperDisplay : MonoBehaviour
     [SerializeField] private Button buyTab;
     [SerializeField] private Button sellTab;
 
+    [SerializeField] private IntData playerGold;
+    [SerializeField] private Text playerGoldUIText;
+    
     [Header("Shopping Cart")]
     [SerializeField] private Text basketTotalText;
     [SerializeField] private Text playerGoldText;
@@ -50,18 +53,21 @@ public class ShopKeeperDisplay : MonoBehaviour
         {
             buyButtonText.text = isSelling ? "Sell Items" : "Buy Items";
             buyButton.onClick.RemoveAllListeners();
+            
             if (isSelling) buyButton.onClick.AddListener(SellItems);
             else buyButton.onClick.AddListener(BuyItems);
         }
         
+        UpdatePlayerGoldUI();
         ClearSlots();
         ClearItemPreview();
         
         basketTotalText.enabled = false;
         buyButton.gameObject.SetActive(false);
         basekTotal = 0;
-        playerGoldText.text = $"Player Gold: {_playerInventory.PrimaryInventorySystem.Gold}";
-        shopGoldText.text = $"Shop Gold: {_shopSystem.AvailableGold}";
+        //playerGoldText.text = $"Player Gold: {_playerInventory.PrimaryInventorySystem.Gold}";
+        playerGoldText.text = $"{playerGold.value}G"; // Assuming IntData has a 'value' field representing gold amount
+        shopGoldText.text = $"Shop Gold: {_shopSystem.AvailableGold}G";
 
         if (isSelling) DisplayPlayerInventory();
         else DisplayShopInventory();
@@ -69,7 +75,7 @@ public class ShopKeeperDisplay : MonoBehaviour
 
     private void BuyItems()
     {
-        if (_playerInventory.PrimaryInventorySystem.Gold < basekTotal) return;
+        if (playerGold.value < basekTotal) return;
         if(!_playerInventory.PrimaryInventorySystem.CheckInvRemaining(shoppingCart)) return;
 
         foreach (var kvp in shoppingCart)
@@ -83,8 +89,9 @@ public class ShopKeeperDisplay : MonoBehaviour
         }
         
         _shopSystem.GainGold(basekTotal);
-        _playerInventory.PrimaryInventorySystem.SpendGold(basekTotal);
-        
+        //_playerInventory.PrimaryInventorySystem.SpendGold(basekTotal);
+        playerGold.value -= basekTotal;
+
         RefreshDisplay();
     }
     private void SellItems()
@@ -96,7 +103,9 @@ public class ShopKeeperDisplay : MonoBehaviour
             var price = GetModifiedPrice(kvp.Key, kvp.Value, _shopSystem.SellMarkUp);
 
             _shopSystem.SellItem(kvp.Key, kvp.Value, price);
-            _playerInventory.PrimaryInventorySystem.GainGold(price);
+            //_playerInventory.PrimaryInventorySystem.GainGold(price);
+            playerGold.value += basekTotal;
+
             _playerInventory.PrimaryInventorySystem.RemoveItemFromInv(kvp.Key, kvp.Value);
         }
         RefreshDisplay();
@@ -247,7 +256,7 @@ public class ShopKeeperDisplay : MonoBehaviour
     
     public void CheckCartAvailGold()
     {
-        var goldToCheck =  isSelling ? _shopSystem.AvailableGold : _playerInventory.PrimaryInventorySystem.Gold;
+        var goldToCheck =  isSelling ? _shopSystem.AvailableGold : playerGold.value;
         
         basketTotalText.color = basekTotal > goldToCheck ? Color.red : Color.white;
 
@@ -255,6 +264,12 @@ public class ShopKeeperDisplay : MonoBehaviour
         
         basketTotalText.text = "Not enough space in inventory";
         basketTotalText.color = Color.red;
+    }
+    
+    private void UpdatePlayerGoldUI()
+    {
+        // Update the UI Text component with the player's gold value
+        playerGoldUIText.text = $"{playerGold.value}G";
     }
 }
 

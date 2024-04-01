@@ -9,6 +9,8 @@ public class SaveData
     public SerializableDictionary<string, ShopSaveData> shopKeeperDictionary;
     public float savedClockTime;
     public InventorySaveData playerInventory;
+    public List<SpawnedItemData> spawnedItemsData;
+
     
     public SaveData()
     {
@@ -17,5 +19,6 @@ public class SaveData
         chestDictionary = new SerializableDictionary<string, InventorySaveData>();
         playerInventory = new InventorySaveData();
         shopKeeperDictionary = new SerializableDictionary<string, ShopSaveData>();
+        spawnedItemsData = new List<SpawnedItemData>();
     }
 }

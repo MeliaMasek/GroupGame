@@ -41,4 +41,11 @@ public class ChestInventory : InventoryHolder, IInteractable
     {
         
     }
+    public void ClearInventory()
+    {
+        if (primaryInventorySystem != null)
+        {
+            primaryInventorySystem.CreateInventory(primaryInventorySystem.InventorySize);
+        }
+    }
 }

@@ -23,7 +23,7 @@ public class TextLabelBehaviorNew : MonoBehaviour
         if (label != null && score != null)
         {
             // Update the UI Text with the current score from the ScoreData.
-            label.text = "Score: " + score.value.ToString();
+            label.text = score.value.ToString();
         }
     }
 
