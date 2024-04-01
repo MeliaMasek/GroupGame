@@ -17,7 +17,7 @@ public class StaticInventoryDisplay : InventoryDisplay
         PlayerInventoryHolder.OnPlayerInventoryChanged -= RefreshStaticDisplay;
     }
 
-    private void RefreshStaticDisplay()
+    public void RefreshStaticDisplay()
     {
         if (inventoryHolder != null)
         {
@@ -44,5 +44,17 @@ public class StaticInventoryDisplay : InventoryDisplay
                 slotDictionary.Add(slotArray[i], inventorySystem.InventorySlots[i]);
                 slotArray[i].Init(inventorySystem.InventorySlots[i]);
             }
+    }
+    
+    public void ClearSlots()
+    {
+        foreach (var slot in slotArray)
+        {
+            slot.ClearSlot();
+            if (slotDictionary.ContainsKey(slot))
+            {
+                slotDictionary.Remove(slot);
+            }
+        }
     }
 }

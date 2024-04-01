@@ -6,10 +6,13 @@ using UnityEngine.InputSystem;
 public class UIController : MonoBehaviour
 {
     [SerializeField] private ShopKeeperDisplay shopKeeperDisplay;
+    [SerializeField] private CraftingDisplay craftingDisplay;
+
 
     private void Awake()
     {
         shopKeeperDisplay.gameObject.SetActive(false);
+        craftingDisplay.gameObject.SetActive(false);
     }
 
     private void Update()
@@ -17,22 +20,36 @@ public class UIController : MonoBehaviour
         if (Keyboard.current.escapeKey.wasPressedThisFrame)
         {
             shopKeeperDisplay.gameObject.SetActive(false);
+            craftingDisplay.gameObject.SetActive(false);
         }
     }
 
     private void OnEnable()
     {
         ShopKeeper.OnShopWindowRequested += DisplayShopWindow;
+        CraftingBench.OnCraftingBenchRequested += DisplayCraftingWindow;
     }
 
     private void OnDisable()
     {
         ShopKeeper.OnShopWindowRequested -= DisplayShopWindow;
+        CraftingBench.OnCraftingBenchRequested -= DisplayCraftingWindow;
     }
 
     private void DisplayShopWindow(ShopSystem shopSystem, PlayerInventoryHolder playerInventory)
     {
         shopKeeperDisplay.gameObject.SetActive(true);
         shopKeeperDisplay.DisplayShopWindow(shopSystem, playerInventory);
+    }
+
+    private void DisplayCraftingWindow(CraftingBench craftingBench)
+    {
+        craftingDisplay.gameObject.SetActive(true);
+        craftingDisplay.DisplayCraftingWindow(craftingBench);
+    }
+    
+    public void CloseCraftingWindow()
+    {
+        craftingDisplay.CloseCraftingWindow();
     }
 }

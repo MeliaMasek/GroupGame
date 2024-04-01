@@ -18,15 +18,14 @@ public class ItemPickup : MonoBehaviour
 
     private void Awake()
     {
-        id = GetComponent<UniqueID>().ID;
+        id = Guid.NewGuid().ToString(); // Generate unique ID
         SaveLoad.onLoadGame += LoadGame;
-        itemSaveData = new ItemPickupSaveData(ItemData, transform.position, transform.rotation);
+        itemSaveData = new ItemPickupSaveData(id, ItemData, transform.position, transform.rotation);
         
         itemCollider = GetComponent<SphereCollider>();
         itemCollider.isTrigger = true;
         itemCollider.radius = pickupRadius;
     }
-
     private void Start()
     {
         SaveGameManager.data.activeItems.Add(id, itemSaveData);
@@ -59,12 +58,14 @@ public class ItemPickup : MonoBehaviour
 [System.Serializable]
 public struct ItemPickupSaveData
 {
+    public string Id; // Unique ID
     public InventoryData ItemData;
     public Vector3 Position;
     public Quaternion Rotation;
     
-    public ItemPickupSaveData(InventoryData _itemData, Vector3 _position, Quaternion _rotation)
+    public ItemPickupSaveData(string id, InventoryData _itemData, Vector3 _position, Quaternion _rotation)
     {
+        Id = id;
         ItemData = _itemData;
         Position = _position;
         Rotation = _rotation;
