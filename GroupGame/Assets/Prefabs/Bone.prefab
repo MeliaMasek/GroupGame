@@ -114,6 +114,7 @@ MonoBehaviour:
   pickupRadius: 0.5
   ItemData: {fileID: 11400000, guid: 6c083125aa5fc984c8332a3c666cea8e, type: 2}
   itemSaveData:
+    Id: 
     ItemData: {fileID: 0}
     Position: {x: 0, y: 0, z: 0}
     Rotation: {x: 0, y: 0, z: 0, w: 0}

@@ -114,6 +114,7 @@ MonoBehaviour:
   pickupRadius: 0.5
   ItemData: {fileID: 11400000, guid: ccba561bd1b8be345ae023073dbf7cb0, type: 2}
   itemSaveData:
+    Id: 
     ItemData: {fileID: 0}
     Position: {x: 0, y: 0, z: 0}
     Rotation: {x: 0, y: 0, z: 0, w: 0}
@@ -129,4 +130,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4795b1b37d78d5b4fb3dcdb6e4aaf6d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 08ff497e-3aba-4109-8c7b-3fc94ea81c14
+  id: 37d81fe7-7b82-4105-9bde-5eb24e17a3f0

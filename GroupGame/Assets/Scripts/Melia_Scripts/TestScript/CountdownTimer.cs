@@ -8,6 +8,10 @@ public class CountdownTimer : MonoBehaviour
     [SerializeField] private Text countdownText;
     public float currentTime;
     [SerializeField] private GameObject endGameUI;
+    [SerializeField] private GameObject ShopUIMenu;
+    [SerializeField] private GameObject CraftingUIMenu;
+
+
 
     void Start()
     {
@@ -36,6 +40,8 @@ public class CountdownTimer : MonoBehaviour
     void TriggerEndGameUI()
     {
         endGameUI.SetActive(true);
+        ShopUIMenu.SetActive(false);
+        CraftingUIMenu.SetActive(false);
     }
     
     public void ResetTimer()
