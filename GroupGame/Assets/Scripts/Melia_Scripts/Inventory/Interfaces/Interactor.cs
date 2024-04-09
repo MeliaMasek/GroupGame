@@ -12,8 +12,8 @@ public class Interactor : MonoBehaviour
     public GameObject craftingPanel;
     public GameObject shopPanel;
 
-    [SerializeField] private Vector3 shopResetPosition;
-    [SerializeField] private Vector3 craftingResetPosition;
+    public Vector3 shopResetPosition;
+    public Vector3 craftingResetPosition;
     public Vector3Data resetPositions;
     public Transform playerTransform;
 
@@ -52,6 +52,8 @@ public class Interactor : MonoBehaviour
     
     public void ShopBackButtonPressed()
     {
+        Debug.Log("Shop Reset Position: " + shopResetPosition);
+        Debug.Log("Player location: " + playerTransform.position);
         shopPanel.SetActive(false);
         playerTransform.position = resetPositions.shopResetPosition; // Move the player to the specified position from the ScriptableObject
         isInCraftingOrShop = false;

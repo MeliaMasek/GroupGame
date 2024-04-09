@@ -12728,14 +12728,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1250105992}
-  m_LocalRotation: {x: -0, y: -0.8575417, z: -0, w: 0.51441455}
-  m_LocalPosition: {x: -2, y: -0.14, z: 0.95}
-  m_LocalScale: {x: 0.16509111, y: 0.16509113, z: 0.16509111}
+  m_LocalRotation: {x: -0, y: -0.72913516, z: -0, w: 0.68436974}
+  m_LocalPosition: {x: -18, y: 6.5, z: 14.5}
+  m_LocalScale: {x: 2.2374015, y: 2.2374, z: 2.2374015}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 414734872}
-  m_Father: {fileID: 1326539834}
-  m_RootOrder: -1
+  m_Father: {fileID: 0}
+  m_RootOrder: 9
   m_LocalEulerAnglesHint: {x: 0, y: -93.628, z: 0}
 --- !u!54 &1250105995
 Rigidbody:
@@ -12838,8 +12838,8 @@ MonoBehaviour:
   interactionPointRadius: 3
   craftingPanel: {fileID: 1402459288}
   shopPanel: {fileID: 1151471042}
-  shopResetPosition: {x: -2, y: 0, z: 0.95}
-  craftingResetPosition: {x: -0.175, y: 0, z: 0.35}
+  shopResetPosition: {x: -39, y: 6.5, z: 32}
+  craftingResetPosition: {x: -18, y: 6.5, z: 14.5}
   resetPositions: {fileID: 11400000, guid: f690976e90707fb4e925def65e52a3d8, type: 2}
   playerTransform: {fileID: 1250105993}
 --- !u!114 &1250106001
@@ -13755,7 +13755,6 @@ Transform:
   - {fileID: 504424065}
   - {fileID: 782489924}
   - {fileID: 1800964781}
-  - {fileID: 1250105993}
   - {fileID: 961258525}
   m_Father: {fileID: 0}
   m_RootOrder: 7

@@ -13,5 +13,5 @@ MonoBehaviour:
   m_Name: ResetPos
   m_EditorClassIdentifier: 
   value: {x: 0, y: 0, z: 0}
-  shopResetPosition: {x: -2, y: 0, z: 0.95}
-  craftingResetPosition: {x: -0.175, y: 0, z: 0.35}
+  shopResetPosition: {x: -39, y: 6.5, z: 32}
+  craftingResetPosition: {x: -18, y: 6.5, z: 14.5}
