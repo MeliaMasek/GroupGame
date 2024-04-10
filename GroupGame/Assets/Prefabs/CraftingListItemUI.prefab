@@ -12,7 +12,7 @@ GameObject:
   - component: {fileID: 170145805984716657}
   m_Layer: 5
   m_Name: CraftingListItemUI
-  m_TagString: Untagged
+  m_TagString: Crafting
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -82,7 +82,7 @@ RectTransform:
   m_GameObject: {fileID: 663391500652021460}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.029743645, y: 0.029743649, z: 0.029743649}
+  m_LocalScale: {x: 0.025537299, y: 0.025537303, z: 0.025537303}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 663391500286822326}
@@ -90,7 +90,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.5, y: 30.756794}
+  m_AnchoredPosition: {x: 7.5, y: 30.757}
   m_SizeDelta: {x: 444.35846, y: 199.66418}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &663391500652021457
@@ -319,7 +319,7 @@ RectTransform:
   m_GameObject: {fileID: 663391502083496535}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
   m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0.035908464, y: 0.24470921, z: 0.24470921}
+  m_LocalScale: {x: 0.060346, y: 0.34522948, z: 0.4061523}
   m_ConstrainProportionsScale: 0
   m_Children:
   - {fileID: 663391501211515030}
@@ -328,7 +328,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 42.8, y: 28.41}
+  m_AnchoredPosition: {x: 44.8, y: 30.2}
   m_SizeDelta: {x: 160, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &663391502083496531
@@ -391,8 +391,8 @@ MonoBehaviour:
   m_Transition: 1
   m_Colors:
     m_NormalColor: {r: 1, g: 1, b: 1, a: 1}
-    m_HighlightedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
-    m_PressedColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 1}
+    m_HighlightedColor: {r: 0.9056604, g: 0.19992878, b: 0.19992878, a: 1}
+    m_PressedColor: {r: 0.09433961, g: 0.09433961, b: 0.09433961, a: 1}
     m_SelectedColor: {r: 0.9607843, g: 0.9607843, b: 0.9607843, a: 1}
     m_DisabledColor: {r: 0.78431374, g: 0.78431374, b: 0.78431374, a: 0.5019608}
     m_ColorMultiplier: 1

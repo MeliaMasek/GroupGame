@@ -90,7 +90,7 @@ GameObject:
   - component: {fileID: 5971723468103932574}
   - component: {fileID: 3445214153035309768}
   m_Layer: 5
-  m_Name: IngredientSlotUI 1
+  m_Name: IngredientSlotUI
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0

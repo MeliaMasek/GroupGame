@@ -1,10 +1,12 @@
 using UnityEngine;
+using UnityEngine.InputSystem;
 
 public class InputMovement : MonoBehaviour
 {
     public float speed = 10.0f;
     private Vector3 movementDirection = Vector3.zero;
 
+    public InputActionReference inputActionRef;
     void Update()
     {
         if (movementDirection != Vector3.zero)
@@ -43,5 +45,15 @@ public class InputMovement : MonoBehaviour
         Vector3 movement = movementDirection * speed * Time.deltaTime;
         
         transform.Translate(movement);
+    }
+
+    private void OnEnable()
+    {
+        
+    }
+    
+    private void OnDisable()
+    {
+        
     }
 }

@@ -14,6 +14,7 @@ public class CraftingListItemUI : MonoBehaviour
 
     private void Awake()
     {
+        Debug.Log("CraftingListItemUI Awake");
         craftButton.onClick.AddListener(OnCraftButtonClicked);
     }
 
@@ -27,6 +28,8 @@ public class CraftingListItemUI : MonoBehaviour
     
     public void OnCraftButtonClicked()
     {
+        Debug.Log("Craft button clicked for recipe: " + recipe.CraftedItem.displayName);
+
         if (parentDisplay == null) return;
         {
             parentDisplay.UpdateChosenRecipe(recipe);
