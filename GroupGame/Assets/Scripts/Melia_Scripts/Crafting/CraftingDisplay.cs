@@ -1,3 +1,4 @@
+using System.Collections;
 using System.Collections.Generic;
 using System.Linq;
 using UnityEngine;
@@ -28,6 +29,7 @@ public class CraftingDisplay : MonoBehaviour
     private List<IngredientSlotUI> ingredientSlotsUI = new List<IngredientSlotUI>();
 
     [SerializeField] private float addedTime;
+    [SerializeField] private Text addedTimeText;
 
     private CraftingBench craftingBench; 
     private CraftingRecipe chosenRecipe;
@@ -186,6 +188,16 @@ public class CraftingDisplay : MonoBehaviour
            {
                Debug.LogWarning("Countdown timer not found.");
            }
+           
+           if (addedTimeText != null)
+           {
+               addedTimeText.text = "+" + addedTime.ToString() + " sec";
+               StartCoroutine(AddedTimeText());
+           }
+           else
+           {
+               Debug.LogWarning("Added time text reference is missing.");
+           }
        }
        else
        {
@@ -201,6 +213,16 @@ public class CraftingDisplay : MonoBehaviour
        RefreshListDisplay();
        ClearItemPreview();
        ClearSlots(ingredientGrid);
+   }
+   
+   private IEnumerator AddedTimeText()
+   {
+       if (addedTimeText != null)
+       {
+           addedTimeText.gameObject.SetActive(true);
+           yield return new WaitForSeconds(.75f); // Adjust the duration as needed
+           addedTimeText.gameObject.SetActive(false);
+       }
    }
    
    public void CloseCraftingWindow()

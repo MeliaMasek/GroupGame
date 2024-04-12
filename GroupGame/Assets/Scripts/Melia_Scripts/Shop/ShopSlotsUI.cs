@@ -18,6 +18,8 @@ public class ShopSlotsUI : MonoBehaviour
     private int tempAmount;
     public ShopKeeperDisplay ParentDisplay { get; private set; }
     public float MarkUp { get; private set; }
+    
+    public int CharacterLimit { get; set; }
 
     private void Awake()
     {
@@ -61,11 +63,11 @@ public class ShopSlotsUI : MonoBehaviour
     public void AddItemToCart()
     {
         if (tempAmount <= 0) return;
-        
-            tempAmount--;
-            ParentDisplay.AddItemToCart(this);
-            itemCount.text = tempAmount.ToString();
-   }
+    
+        tempAmount--;
+        ParentDisplay.AddItemToCart(this, CharacterLimit); // Pass the character limit here
+        itemCount.text = tempAmount.ToString();
+    }
     
     public void RemoveItemFromCart()
     {

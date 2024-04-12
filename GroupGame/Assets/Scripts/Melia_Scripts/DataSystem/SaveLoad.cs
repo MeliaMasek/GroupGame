@@ -17,7 +17,7 @@ public static class SaveLoad
 
         string dir = Application.persistentDataPath + directory;
 
-        GUIUtility.systemCopyBuffer = dir;
+        //GUIUtility.systemCopyBuffer = dir; //Copy the path to the clipboard
         
         if (!Directory.Exists(dir))
         {

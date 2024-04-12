@@ -11,9 +11,8 @@ public class ItemPickup : MonoBehaviour
     public float pickupRadius = 1f;
     public InventoryData ItemData;
 
-    private SphereCollider itemCollider;
-
-    [SerializeField] private ItemPickupSaveData itemSaveData;
+    private BoxCollider itemCollider;
+    private ItemPickupSaveData itemSaveData;
     private string id;
 
     private void Awake()
@@ -22,10 +21,11 @@ public class ItemPickup : MonoBehaviour
         SaveLoad.onLoadGame += LoadGame;
         itemSaveData = new ItemPickupSaveData(id, ItemData, transform.position, transform.rotation);
         
-        itemCollider = GetComponent<SphereCollider>();
+        itemCollider = GetComponent<BoxCollider>();
         itemCollider.isTrigger = true;
-        itemCollider.radius = pickupRadius;
+        //itemCollider.radius = pickupRadius;
     }
+
     private void Start()
     {
         SaveGameManager.data.activeItems.Add(id, itemSaveData);

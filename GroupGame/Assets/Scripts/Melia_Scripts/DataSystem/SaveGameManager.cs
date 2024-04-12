@@ -19,6 +19,8 @@ public class SaveGameManager : MonoBehaviour
     
     public static void SaveData()
     {
+        data.playerPosition = FindObjectOfType<CharacterMovement>().transform.position;
+
         data.savedClockTime = FindObjectOfType<CountdownTimer>().currentTime;
         
         var saveData = data;
@@ -27,8 +29,18 @@ public class SaveGameManager : MonoBehaviour
     
     private static void LoadData(SaveData _data)
     {
+        // Print out the saved player position
+        Debug.Log("Saved player position: " + _data.playerPosition);
+
+        // Load player position
+        Vector3 savedPlayerPosition = _data.playerPosition;
+        FindObjectOfType<CharacterMovement>().transform.position = savedPlayerPosition;
+
+        // Print out the loaded player position
+        Debug.Log("Loaded player position: " + savedPlayerPosition);
+
         FindObjectOfType<CountdownTimer>().currentTime = _data.savedClockTime;
-        
+
         data = _data;
     }
 
@@ -48,3 +60,4 @@ public class SaveGameManager : MonoBehaviour
         return new List<InventoryData>();
     }
 }
+

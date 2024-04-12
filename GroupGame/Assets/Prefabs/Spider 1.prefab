@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 6103986334094687347}
   - component: {fileID: 6103986334094687351}
   - component: {fileID: 6103986334094687350}
-  - component: {fileID: 6103986334094687349}
+  - component: {fileID: 6514158280287643948}
   - component: {fileID: 6103986334094687348}
   - component: {fileID: 6103986334094687240}
   m_Layer: 6
@@ -34,7 +34,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 13
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!33 &6103986334094687351
 MeshFilter:
@@ -86,8 +86,8 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!135 &6103986334094687349
-SphereCollider:
+--- !u!65 &6514158280287643948
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -97,8 +97,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 10.721365
-  m_Center: {x: 0, y: 3.2531652, z: 1.6615331}
+  m_Size: {x: 120.56558, y: 14.866555, z: 136.94469}
+  m_Center: {x: 0, y: 7.290974, z: 2.0900347}
 --- !u!114 &6103986334094687348
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -113,11 +113,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupRadius: 0.5
   ItemData: {fileID: 11400000, guid: ccba561bd1b8be345ae023073dbf7cb0, type: 2}
-  itemSaveData:
-    Id: 
-    ItemData: {fileID: 0}
-    Position: {x: 0, y: 0, z: 0}
-    Rotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &6103986334094687240
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -130,4 +125,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4795b1b37d78d5b4fb3dcdb6e4aaf6d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: 37d81fe7-7b82-4105-9bde-5eb24e17a3f0
+  id: 829e5f70-a161-4c58-8377-79d499ad3d45

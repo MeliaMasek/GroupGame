@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using UnityEngine;
 
 //Code borrowed and Modified by Dan Pos off of the inventory system series from youtube https://www.youtube.com/playlist?list=PL-hj540P5Q1hLK7NS5fTSNYoNJpPWSL24
 public class SaveData
@@ -10,6 +11,7 @@ public class SaveData
     public float savedClockTime;
     public InventorySaveData playerInventory;
     public List<SpawnedItemData> spawnedItemsData;
+    public Vector3 playerPosition;
 
     
     public SaveData()
@@ -20,5 +22,6 @@ public class SaveData
         playerInventory = new InventorySaveData();
         shopKeeperDictionary = new SerializableDictionary<string, ShopSaveData>();
         spawnedItemsData = new List<SpawnedItemData>();
+        playerPosition = Vector3.zero;
     }
 }

@@ -33,6 +33,8 @@ public class ShopKeeperDisplay : MonoBehaviour
     private int basekTotal;
     private bool isSelling;
     
+    public int characterLimit = 20; // Default character limit
+    
     private ShopSystem _shopSystem;
     private PlayerInventoryHolder _playerInventory;
 
@@ -150,17 +152,17 @@ public class ShopKeeperDisplay : MonoBehaviour
         }
     }
     
-    public void AddItemToCart(ShopSlotsUI shopSlotsUI)
+    public void AddItemToCart(ShopSlotsUI shopSlotsUI, int characterLimit)
     {
         var data = shopSlotsUI.AssignedItemSlot.ItemData;
-        
+
         UpdateItemPreview(shopSlotsUI);
 
         var price = GetModifiedPrice(data, 1, shopSlotsUI.MarkUp);
 
         if (shoppingCart.ContainsKey(data))
         {
-            shoppingCart[data]++;   
+            shoppingCart[data]++;
             var newString = $"{data.displayName} {price}G x {shoppingCart[data]}";
             shoppingCartUI[data].SetItemText(newString);
         }
@@ -172,7 +174,7 @@ public class ShopKeeperDisplay : MonoBehaviour
             shoppingCartTextObj.SetItemText(newString);
             shoppingCartUI.Add(data, shoppingCartTextObj);
         }
-        
+
         basekTotal += price;
         basketTotalText.text = $"Total: {basekTotal}G";
 
@@ -181,7 +183,10 @@ public class ShopKeeperDisplay : MonoBehaviour
             basketTotalText.enabled = true;
             buyButton.gameObject.SetActive(true);
         }
-        
+
+        // Check if text needs resizing
+        CheckTextSize(shoppingCartUI[data].GetComponentInChildren<Text>());
+
         CheckCartAvailGold();
     }
 
@@ -262,14 +267,34 @@ public class ShopKeeperDisplay : MonoBehaviour
 
         if (isSelling || _playerInventory.PrimaryInventorySystem.CheckInvRemaining(shoppingCart)) return;
         
-        basketTotalText.text = "Not enough space in inventory";
+        basketTotalText.text = "Inventory Full";
         basketTotalText.color = Color.red;
     }
     
     private void UpdatePlayerGoldUI()
     {
         // Update the UI Text component with the player's gold value
-        playerGoldUIText.text = $"{playerGold.value}G";
+        playerGoldUIText.text = $"{playerGold.value}";
+    }
+    
+    private void CheckTextSize(Text textComponent)
+    {
+        textComponent.horizontalOverflow = HorizontalWrapMode.Wrap;
+    }
+
+    private string InsertLineBreaks(string text, int breakIndex)
+    {
+        string wrappedText = "";
+
+        // Insert line breaks at the specified break index
+        for (int i = 0; i < text.Length; i++)
+        {
+            wrappedText += text[i];
+            if ((i + 1) % breakIndex == 0)
+                wrappedText += "\n";
+        }
+
+        return wrappedText;
     }
 }
 

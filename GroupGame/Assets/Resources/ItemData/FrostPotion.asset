@@ -12,9 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1c950878a92ac714cb145efc294f15d8, type: 3}
   m_Name: FrostPotion
   m_EditorClassIdentifier: 
-  ID: 8
+  ID: 4
   displayName: Frost Potion
   description: 
-  icon: {fileID: 21300000, guid: f2901efd8bb16bc408ad37f017fbf9bc, type: 3}
+  icon: {fileID: 21300000, guid: d3398a79146be044aa167bdeda00c6d6, type: 3}
   maxStackSize: 0
   GoldValue: 15

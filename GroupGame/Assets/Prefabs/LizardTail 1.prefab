@@ -92,7 +92,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8252623125420091487}
-  - component: {fileID: 8252623125420091457}
+  - component: {fileID: 518780982562793355}
   - component: {fileID: 8252623125420091486}
   - component: {fileID: 8252623125420091458}
   m_Layer: 6
@@ -116,10 +116,10 @@ Transform:
   m_Children:
   - {fileID: 2991676965323224406}
   m_Father: {fileID: 0}
-  m_RootOrder: 8
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!135 &8252623125420091457
-SphereCollider:
+--- !u!65 &518780982562793355
+BoxCollider:
   m_ObjectHideFlags: 0
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
@@ -129,8 +129,8 @@ SphereCollider:
   m_IsTrigger: 0
   m_Enabled: 1
   serializedVersion: 2
-  m_Radius: 0.5
-  m_Center: {x: 0, y: 0, z: 0}
+  m_Size: {x: 3.7508922, y: 0.52553195, z: 3.0316463}
+  m_Center: {x: 0.10406804, y: 0.17256981, z: -0.10581708}
 --- !u!114 &8252623125420091486
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -145,11 +145,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupRadius: 0.5
   ItemData: {fileID: 11400000, guid: 320f93530095eb648bcad05b4fbd97ad, type: 2}
-  itemSaveData:
-    Id: 
-    ItemData: {fileID: 0}
-    Position: {x: 0, y: 0, z: 0}
-    Rotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!114 &8252623125420091458
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -162,4 +157,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4795b1b37d78d5b4fb3dcdb6e4aaf6d3, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  id: acd630d9-1c78-4028-88d9-8c998dd7ac11
+  id: cf52e32d-87cb-41ed-abc0-f212f05793e8
