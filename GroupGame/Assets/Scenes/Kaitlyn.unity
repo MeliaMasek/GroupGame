@@ -529,11 +529,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupRadius: 0.5
   ItemData: {fileID: 11400000, guid: e2880d32e35cc9940ba7056631d4c2d4, type: 2}
-  itemSaveData:
-    Id: 
-    ItemData: {fileID: 0}
-    Position: {x: 0, y: 0, z: 0}
-    Rotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!135 &160117245
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -1090,8 +1085,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 0}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -2250,23 +2245,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 506156686ed5ea0418734c56505917e1, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  inventorySize: 7
-  inventorySystem:
-    inventorySlots:
-    - itemData: {fileID: 0}
-      stacksize: 0
-    - itemData: {fileID: 0}
-      stacksize: 0
-    - itemData: {fileID: 0}
-      stacksize: 0
-    - itemData: {fileID: 0}
-      stacksize: 0
-    - itemData: {fileID: 0}
-      stacksize: 0
-    - itemData: {fileID: 0}
-      stacksize: 0
-    - itemData: {fileID: 0}
-      stacksize: 0
 --- !u!54 &380024864
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -2746,11 +2724,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupRadius: 0.5
   ItemData: {fileID: 11400000, guid: fd9fe9630031abf4ab63352c0513fce4, type: 2}
-  itemSaveData:
-    Id: 
-    ItemData: {fileID: 0}
-    Position: {x: 0, y: 0, z: 0}
-    Rotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!135 &411279552
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -2941,7 +2914,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 1497153452}
   mainMenu: {fileID: 1433142589}
   shopMenu: {fileID: 461073048}
-  craftingMenu: {fileID: 1654424766}
+  creditsMenu: {fileID: 0}
 --- !u!114 &461073050
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -4535,11 +4508,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupRadius: 0.5
   ItemData: {fileID: 11400000, guid: fd9fe9630031abf4ab63352c0513fce4, type: 2}
-  itemSaveData:
-    Id: 
-    ItemData: {fileID: 0}
-    Position: {x: 0, y: 0, z: 0}
-    Rotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!135 &752567613
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -4666,11 +4634,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupRadius: 0.5
   ItemData: {fileID: 11400000, guid: 3769354787e00754f9491541acd70387, type: 2}
-  itemSaveData:
-    Id: 
-    ItemData: {fileID: 0}
-    Position: {x: 0, y: 0, z: 0}
-    Rotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!135 &767302022
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5291,11 +5254,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupRadius: 0.5
   ItemData: {fileID: 11400000, guid: 45b30fc3399bdac42bcb10189db52f2c, type: 2}
-  itemSaveData:
-    Id: 
-    ItemData: {fileID: 0}
-    Position: {x: 0, y: 0, z: 0}
-    Rotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!135 &844021509
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -5700,11 +5658,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupRadius: 0.5
   ItemData: {fileID: 11400000, guid: a1eb501a797ce3c4eb30045e42b0e335, type: 2}
-  itemSaveData:
-    Id: 
-    ItemData: {fileID: 0}
-    Position: {x: 0, y: 0, z: 0}
-    Rotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!135 &882560107
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -6673,11 +6626,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupRadius: 0.5
   ItemData: {fileID: 11400000, guid: e2880d32e35cc9940ba7056631d4c2d4, type: 2}
-  itemSaveData:
-    Id: 
-    ItemData: {fileID: 0}
-    Position: {x: 0, y: 0, z: 0}
-    Rotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!135 &1069865134
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -7729,11 +7677,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupRadius: 0.5
   ItemData: {fileID: 11400000, guid: e2880d32e35cc9940ba7056631d4c2d4, type: 2}
-  itemSaveData:
-    Id: 
-    ItemData: {fileID: 0}
-    Position: {x: 0, y: 0, z: 0}
-    Rotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!135 &1178479423
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -8024,7 +7967,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1247337578}
   m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -306.6, y: 71.022865, z: 147.3}
+  m_LocalPosition: {x: -306.6, y: 71.022865, z: 154.6}
   m_LocalScale: {x: 2.1277258, y: 59.54537, z: 145.233}
   m_ConstrainProportionsScale: 0
   m_Children: []
@@ -8346,11 +8289,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupRadius: 0.5
   ItemData: {fileID: 11400000, guid: fd9fe9630031abf4ab63352c0513fce4, type: 2}
-  itemSaveData:
-    Id: 
-    ItemData: {fileID: 0}
-    Position: {x: 0, y: 0, z: 0}
-    Rotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!135 &1268424427
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -9128,7 +9066,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &1364492758
 RectTransform:
   m_ObjectHideFlags: 0
@@ -9641,8 +9579,8 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 10905, guid: 0000000000000000f000000000000000, type: 0}
-  m_Type: 1
+  m_Sprite: {fileID: 0}
+  m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
   m_FillMethod: 4
@@ -9698,7 +9636,7 @@ RectTransform:
   m_AnchorMin: {x: 0.5, y: 0}
   m_AnchorMax: {x: 0.5, y: 0}
   m_AnchoredPosition: {x: -92.44299, y: -525.07245}
-  m_SizeDelta: {x: 0, y: 0}
+  m_SizeDelta: {x: 30, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &1405935339
 MonoBehaviour:
@@ -10086,7 +10024,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 1497153452}
   mainMenu: {fileID: 1433142589}
   shopMenu: {fileID: 461073048}
-  craftingMenu: {fileID: 1654424766}
+  creditsMenu: {fileID: 0}
 --- !u!114 &1433142591
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -10273,11 +10211,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupRadius: 0.5
   ItemData: {fileID: 11400000, guid: 73f6f91e41977354e9bed179501fc35b, type: 2}
-  itemSaveData:
-    Id: 
-    ItemData: {fileID: 0}
-    Position: {x: 0, y: 0, z: 0}
-    Rotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!135 &1446416056
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -10857,11 +10790,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupRadius: 0.5
   ItemData: {fileID: 11400000, guid: 45b30fc3399bdac42bcb10189db52f2c, type: 2}
-  itemSaveData:
-    Id: 
-    ItemData: {fileID: 0}
-    Position: {x: 0, y: 0, z: 0}
-    Rotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!135 &1482457084
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11048,7 +10976,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 1497153452}
   mainMenu: {fileID: 1433142589}
   shopMenu: {fileID: 461073048}
-  craftingMenu: {fileID: 1654424766}
+  creditsMenu: {fileID: 0}
 --- !u!114 &1497153454
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -11159,11 +11087,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupRadius: 0.5
   ItemData: {fileID: 11400000, guid: 45b30fc3399bdac42bcb10189db52f2c, type: 2}
-  itemSaveData:
-    Id: 
-    ItemData: {fileID: 0}
-    Position: {x: 0, y: 0, z: 0}
-    Rotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!135 &1504122364
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11290,11 +11213,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupRadius: 0.5
   ItemData: {fileID: 11400000, guid: 3769354787e00754f9491541acd70387, type: 2}
-  itemSaveData:
-    Id: 
-    ItemData: {fileID: 0}
-    Position: {x: 0, y: 0, z: 0}
-    Rotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!135 &1509530186
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -11875,11 +11793,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupRadius: 0.5
   ItemData: {fileID: 11400000, guid: 3769354787e00754f9491541acd70387, type: 2}
-  itemSaveData:
-    Id: 
-    ItemData: {fileID: 0}
-    Position: {x: 0, y: 0, z: 0}
-    Rotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!135 &1574939322
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -12768,11 +12681,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupRadius: 0.5
   ItemData: {fileID: 11400000, guid: a1eb501a797ce3c4eb30045e42b0e335, type: 2}
-  itemSaveData:
-    Id: 
-    ItemData: {fileID: 0}
-    Position: {x: 0, y: 0, z: 0}
-    Rotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!135 &1642473607
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -13028,7 +12936,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 1497153452}
   mainMenu: {fileID: 1433142589}
   shopMenu: {fileID: 461073048}
-  craftingMenu: {fileID: 1654424766}
+  creditsMenu: {fileID: 0}
 --- !u!114 &1654424769
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13791,7 +13699,7 @@ MonoBehaviour:
   pauseMenu: {fileID: 1775313430}
   mainMenu: {fileID: 1433142589}
   shopMenu: {fileID: 461073048}
-  craftingMenu: {fileID: 1654424766}
+  creditsMenu: {fileID: 0}
 --- !u!114 &1775313433
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -13956,11 +13864,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupRadius: 0.5
   ItemData: {fileID: 11400000, guid: fd05729461fff774cb5df70c4d50556d, type: 2}
-  itemSaveData:
-    Id: 
-    ItemData: {fileID: 0}
-    Position: {x: 0, y: 0, z: 0}
-    Rotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!135 &1797933327
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -14087,11 +13990,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupRadius: 0.5
   ItemData: {fileID: 11400000, guid: a1eb501a797ce3c4eb30045e42b0e335, type: 2}
-  itemSaveData:
-    Id: 
-    ItemData: {fileID: 0}
-    Position: {x: 0, y: 0, z: 0}
-    Rotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!135 &1798310702
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -14672,11 +14570,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupRadius: 0.5
   ItemData: {fileID: 11400000, guid: fd05729461fff774cb5df70c4d50556d, type: 2}
-  itemSaveData:
-    Id: 
-    ItemData: {fileID: 0}
-    Position: {x: 0, y: 0, z: 0}
-    Rotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!135 &1879213016
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -14879,11 +14772,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupRadius: 0.5
   ItemData: {fileID: 11400000, guid: 73f6f91e41977354e9bed179501fc35b, type: 2}
-  itemSaveData:
-    Id: 
-    ItemData: {fileID: 0}
-    Position: {x: 0, y: 0, z: 0}
-    Rotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!135 &1915257928
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -15238,11 +15126,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupRadius: 0.5
   ItemData: {fileID: 11400000, guid: 73f6f91e41977354e9bed179501fc35b, type: 2}
-  itemSaveData:
-    Id: 
-    ItemData: {fileID: 0}
-    Position: {x: 0, y: 0, z: 0}
-    Rotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!135 &1965451737
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16052,7 +15935,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6fa550c4c7d940845890f7f5c9a7ea12, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  CraftingMenu: {fileID: 1654424766}
 --- !u!135 &2015096794
 SphereCollider:
   m_ObjectHideFlags: 0
@@ -16330,11 +16212,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   pickupRadius: 0.5
   ItemData: {fileID: 11400000, guid: fd05729461fff774cb5df70c4d50556d, type: 2}
-  itemSaveData:
-    Id: 
-    ItemData: {fileID: 0}
-    Position: {x: 0, y: 0, z: 0}
-    Rotation: {x: 0, y: 0, z: 0, w: 0}
 --- !u!135 &2037020300
 SphereCollider:
   m_ObjectHideFlags: 0
