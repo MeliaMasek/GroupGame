@@ -279,22 +279,17 @@ public class ShopKeeperDisplay : MonoBehaviour
     
     private void CheckTextSize(Text textComponent)
     {
-        textComponent.horizontalOverflow = HorizontalWrapMode.Wrap;
-    }
+        // Get the preferred width of the text
+        float textWidth = textComponent.preferredWidth;
 
-    private string InsertLineBreaks(string text, int breakIndex)
-    {
-        string wrappedText = "";
+        // Get the RectTransform of the container
+        RectTransform containerRectTransform = shoppingCartContentPanel.GetComponent<RectTransform>();
 
-        // Insert line breaks at the specified break index
-        for (int i = 0; i < text.Length; i++)
-        {
-            wrappedText += text[i];
-            if ((i + 1) % breakIndex == 0)
-                wrappedText += "\n";
-        }
+        // Adjust the width of the container to accommodate the text width
+        containerRectTransform.sizeDelta = new Vector2(textWidth, containerRectTransform.sizeDelta.y);
 
-        return wrappedText;
+        // Set the horizontal overflow mode to truncate long text
+        textComponent.horizontalOverflow = HorizontalWrapMode.Overflow;
     }
 }
 
