@@ -34,7 +34,10 @@ public class ShopKeeperDisplay : MonoBehaviour
     private bool isSelling;
     
     public int characterLimit = 20; // Default character limit
-    
+
+    public AudioSource buyAudio;
+    public AudioSource sellAudio;
+
     private ShopSystem _shopSystem;
     private PlayerInventoryHolder _playerInventory;
 
@@ -79,6 +82,11 @@ public class ShopKeeperDisplay : MonoBehaviour
     {
         if (playerGold.value < basekTotal) return;
         if(!_playerInventory.PrimaryInventorySystem.CheckInvRemaining(shoppingCart)) return;
+        
+        if (buyAudio != null && buyAudio.clip != null)
+        {
+            buyAudio.PlayOneShot(buyAudio.clip);
+        }
 
         foreach (var kvp in shoppingCart)
         {
@@ -99,6 +107,11 @@ public class ShopKeeperDisplay : MonoBehaviour
     private void SellItems()
     {
         if (_shopSystem.AvailableGold < basekTotal) return;
+        
+        if (sellAudio != null && sellAudio.clip != null)
+        {
+            sellAudio.PlayOneShot(sellAudio.clip);
+        }
 
         foreach (var kvp in shoppingCart)
         {

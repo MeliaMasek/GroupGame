@@ -34,8 +34,10 @@ public class CraftingDisplay : MonoBehaviour
     private CraftingBench craftingBench; 
     private CraftingRecipe chosenRecipe;
     [SerializeField] public PlayerInventoryHolder playerInventoryHolder;
-
-   private void Awake()
+    
+    public AudioSource audioSource;
+    public AudioClip[] audioClips;
+    private void Awake()
    {
        increaseCraftAmountButton.onClick.RemoveAllListeners();
        decreaseCraftAmountButton.onClick.RemoveAllListeners();
@@ -176,6 +178,14 @@ public class CraftingDisplay : MonoBehaviour
        {
            Debug.Log("Crafted item added to inventory successfully.");
            craftingBench.AddCraftedItem(chosenRecipe.CraftedItem);
+           
+           if (audioClips != null && audioClips.Length > 0)
+           {
+               int randomIndex = Random.Range(0, audioClips.Length);
+               AudioClip randomClip = audioClips[randomIndex];
+               audioSource.clip = randomClip;
+               audioSource.Play();
+           }
 
            CountdownTimer countdownTimer = FindObjectOfType<CountdownTimer>();
            if (countdownTimer != null)

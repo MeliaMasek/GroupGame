@@ -14,7 +14,7 @@ public class CraftingBench : MonoBehaviour, IInteractable
 
     public List<CraftingRecipe> KnownRecipe => knownRecipe;
     public static UnityAction<CraftingBench> OnCraftingBenchRequested;
-
+    
     #region Interctable Interface
 
         public UnityAction<IInteractable> OnInteractionComplete { get; set; }
@@ -36,6 +36,7 @@ public class CraftingBench : MonoBehaviour, IInteractable
                 playerInventory.PrimaryInventorySystem.AddToInventory(activeRecipe.CraftedItem, activeRecipe.CraftAmount);
             }   
             */
+ 
             EndInteraction();
             interactSuccessful = true;
         }

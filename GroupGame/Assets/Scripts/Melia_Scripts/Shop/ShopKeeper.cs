@@ -16,6 +16,9 @@ public class ShopKeeper : MonoBehaviour, IInteractable
     public UnityAction<IInteractable> OnInteractionComplete { get; set; }
 
     public string id;
+
+    public AudioSource audioSource;
+    public AudioClip[] audioClips;
     
     private void Awake()
     {
@@ -59,6 +62,14 @@ public class ShopKeeper : MonoBehaviour, IInteractable
 
         if (playerInv != null)
         {
+            if (audioClips != null && audioClips.Length > 0)
+            {
+                int randomIndex = Random.Range(0, audioClips.Length);
+                AudioClip randomClip = audioClips[randomIndex];
+                audioSource.clip = randomClip;
+                audioSource.Play();
+            }
+            
             OnShopWindowRequested?.Invoke(shopSystem, playerInv);
             interactSuccessful = true;
         }
