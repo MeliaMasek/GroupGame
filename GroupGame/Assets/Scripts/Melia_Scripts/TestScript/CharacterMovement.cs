@@ -5,7 +5,7 @@ using UnityEngine.InputSystem;
 public class CharacterMovement : MonoBehaviour
 
 {
-    //[SerializeField] private Animator animator;
+    [SerializeField] private Animator animator;
     public InputActionReference playerInput;
     private CharacterController controller;
     private Transform camMain;
@@ -45,11 +45,11 @@ public class CharacterMovement : MonoBehaviour
             float targetAngle = Mathf.Atan2(movementInput.x, movementInput.y) * Mathf.Rad2Deg + camMain.eulerAngles.y;
             Quaternion rotation = Quaternion.Euler(0f, targetAngle, 0f);
             transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * rotationSpeed);
-            //animator.SetBool("IsWalking", true);
+            animator.SetBool("IsWalking", true);
         }
         else
         {
-            //animator.SetBool("IsWalking", false);
+            animator.SetBool("IsWalking", false);
         }
     }
 }
