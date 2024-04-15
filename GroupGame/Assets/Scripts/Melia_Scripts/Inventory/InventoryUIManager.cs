@@ -5,14 +5,13 @@ using UnityEngine.InputSystem;
 public class InventoryUIManager : MonoBehaviour
 {
     public DynamicInventoryDisplay InventoryPanel;
-    public DynamicInventoryDisplay PlayerBackpackPanel;
-
     //public DynamicInventoryDisplay PlayerBackpackPanel;
-    //public int inventorySize = 10;
+
+    public int inventorySize = 10;
     private void Awake()
     {
         InventoryPanel.gameObject.SetActive(false);
-        PlayerBackpackPanel.gameObject.SetActive(false);
+        //PlayerBackpackPanel.gameObject.SetActive(false);
     }
 
     private void OnEnable()
@@ -31,7 +30,7 @@ public class InventoryUIManager : MonoBehaviour
     {
         if (InventoryPanel.gameObject.activeInHierarchy && Keyboard.current.escapeKey.wasPressedThisFrame) InventoryPanel.gameObject.SetActive(false);
         
-        if (PlayerBackpackPanel.gameObject.activeInHierarchy && Keyboard.current.escapeKey.wasPressedThisFrame) PlayerBackpackPanel.gameObject.SetActive(false);
+        //if (PlayerBackpackPanel.gameObject.activeInHierarchy && Keyboard.current.escapeKey.wasPressedThisFrame) PlayerBackpackPanel.gameObject.SetActive(false);
     }
 
     void DisplayInventory(InventorySystem invToDisplay, int offset)
@@ -42,7 +41,7 @@ public class InventoryUIManager : MonoBehaviour
     
     void DisplayPlayerBackpack(InventorySystem invToDisplay, int offset)
     {
-        PlayerBackpackPanel.gameObject.SetActive(true);
-        PlayerBackpackPanel.RefreshDynamicInventory(invToDisplay, offset);
+        //PlayerBackpackPanel.gameObject.SetActive(true);
+        //PlayerBackpackPanel.RefreshDynamicInventory(invToDisplay, offset);
     }
 }

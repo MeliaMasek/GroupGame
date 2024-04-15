@@ -46,10 +46,12 @@ public class CharacterMovement : MonoBehaviour
             Quaternion rotation = Quaternion.Euler(0f, targetAngle, 0f);
             transform.rotation = Quaternion.Lerp(transform.rotation, rotation, Time.deltaTime * rotationSpeed);
             animator.SetBool("IsWalking", true);
+
         }
         else
         {
             animator.SetBool("IsWalking", false);
+
         }
     }
 }

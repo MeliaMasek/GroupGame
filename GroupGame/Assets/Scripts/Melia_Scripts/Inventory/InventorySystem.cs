@@ -95,7 +95,7 @@ public class InventorySystem
         }
         return true;
     }
-    
+
     public void SpendGold(int basekTotal)
     {
         gold -= basekTotal;

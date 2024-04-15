@@ -5,9 +5,9 @@ using UnityEngine.InputSystem;
 public class PlayerInventoryHolder : InventoryHolder
 {
     public static UnityAction OnPlayerInventoryChanged;
-    
-    public static UnityAction<InventorySystem, int> OnPlayerBackpackDisplayRequested; 
-    
+
+    public static UnityAction<InventorySystem, int> OnPlayerBackpackDisplayRequested;
+
     private void Start()
     {
         SaveGameManager.data.playerInventory = new InventorySaveData(primaryInventorySystem);
@@ -26,13 +26,14 @@ public class PlayerInventoryHolder : InventoryHolder
     {
         if (Keyboard.current.bKey.wasPressedThisFrame) OnPlayerBackpackDisplayRequested?.Invoke(primaryInventorySystem, offset);
     }
-    
+
     public bool AddItemToInventory(InventoryData data, int amount)
     {
         if (primaryInventorySystem.AddToInventory(data, amount))
         {
             return true;
         }
+
         return false;
     }
 }

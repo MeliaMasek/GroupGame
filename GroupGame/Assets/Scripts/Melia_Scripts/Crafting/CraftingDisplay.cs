@@ -37,6 +37,7 @@ public class CraftingDisplay : MonoBehaviour
     
     public AudioSource audioSource;
     public AudioClip[] audioClips;
+
     private void Awake()
    {
        increaseCraftAmountButton.onClick.RemoveAllListeners();
@@ -224,7 +225,7 @@ public class CraftingDisplay : MonoBehaviour
        ClearItemPreview();
        ClearSlots(ingredientGrid);
    }
-   
+
    private IEnumerator AddedTimeText()
    {
        if (addedTimeText != null)
