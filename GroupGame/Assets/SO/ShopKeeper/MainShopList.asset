@@ -14,19 +14,19 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   items:
   - ItemData: {fileID: 11400000, guid: 17730c8874cd8e34e95907f6837e7d78, type: 2}
-    Amount: 15
+    Amount: 10
   - ItemData: {fileID: 11400000, guid: 6c083125aa5fc984c8332a3c666cea8e, type: 2}
-    Amount: 15
+    Amount: 10
   - ItemData: {fileID: 11400000, guid: 8b19b1963fd9f5545a87f221a843c817, type: 2}
-    Amount: 15
+    Amount: 10
   - ItemData: {fileID: 11400000, guid: 320f93530095eb648bcad05b4fbd97ad, type: 2}
-    Amount: 15
+    Amount: 10
   - ItemData: {fileID: 11400000, guid: 471256ee27284814c85dd9b40b19994a, type: 2}
-    Amount: 15
+    Amount: 10
   - ItemData: {fileID: 11400000, guid: ccba561bd1b8be345ae023073dbf7cb0, type: 2}
-    Amount: 15
+    Amount: 10
   - ItemData: {fileID: 11400000, guid: ecf670765c0d31c418af18abcb34564b, type: 2}
-    Amount: 15
+    Amount: 10
   maxAllowedGold: 1000
-  sellMarkUp: 0.25
-  buyMarkUp: 0.25
+  sellMarkUp: 1
+  buyMarkUp: 3
