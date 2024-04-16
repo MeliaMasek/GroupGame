@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: FrostRecipe
   m_EditorClassIdentifier: 
   ingredients:
-  - ItemRequired: {fileID: 11400000, guid: 8b19b1963fd9f5545a87f221a843c817, type: 2}
+  - ItemRequired: {fileID: 11400000, guid: 17730c8874cd8e34e95907f6837e7d78, type: 2}
     AmountRequired: 2
-  - ItemRequired: {fileID: 11400000, guid: 320f93530095eb648bcad05b4fbd97ad, type: 2}
-    AmountRequired: 2
+  - ItemRequired: {fileID: 11400000, guid: ecf670765c0d31c418af18abcb34564b, type: 2}
+    AmountRequired: 1
   craftedItem: {fileID: 11400000, guid: f9ddc7b060c9b994782c412b684ecdab, type: 2}
   craftAmount: 1

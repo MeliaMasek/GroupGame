@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: WisdomRecipe
   m_EditorClassIdentifier: 
   ingredients:
-  - ItemRequired: {fileID: 11400000, guid: 8b19b1963fd9f5545a87f221a843c817, type: 2}
+  - ItemRequired: {fileID: 11400000, guid: 320f93530095eb648bcad05b4fbd97ad, type: 2}
     AmountRequired: 2
-  - ItemRequired: {fileID: 11400000, guid: 6c083125aa5fc984c8332a3c666cea8e, type: 2}
-    AmountRequired: 1
+  - ItemRequired: {fileID: 11400000, guid: 17730c8874cd8e34e95907f6837e7d78, type: 2}
+    AmountRequired: 2
   craftedItem: {fileID: 11400000, guid: b191aca236a2d5044ae4cc47abf7e7ef, type: 2}
   craftAmount: 1

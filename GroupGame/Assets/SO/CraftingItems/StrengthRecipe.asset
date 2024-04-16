@@ -13,11 +13,11 @@ MonoBehaviour:
   m_Name: StrengthRecipe
   m_EditorClassIdentifier: 
   ingredients:
-  - ItemRequired: {fileID: 11400000, guid: 17730c8874cd8e34e95907f6837e7d78, type: 2}
+  - ItemRequired: {fileID: 11400000, guid: 8b19b1963fd9f5545a87f221a843c817, type: 2}
+    AmountRequired: 2
+  - ItemRequired: {fileID: 11400000, guid: ccba561bd1b8be345ae023073dbf7cb0, type: 2}
     AmountRequired: 1
   - ItemRequired: {fileID: 11400000, guid: 6c083125aa5fc984c8332a3c666cea8e, type: 2}
-    AmountRequired: 2
-  - ItemRequired: {fileID: 11400000, guid: 471256ee27284814c85dd9b40b19994a, type: 2}
     AmountRequired: 1
   craftedItem: {fileID: 11400000, guid: 4ba80152f1ac86048bb06a52d2787d0a, type: 2}
   craftAmount: 1
