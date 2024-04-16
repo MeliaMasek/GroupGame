@@ -33,6 +33,7 @@ public class DialogueManager : MonoBehaviour
     {
         if (sentences.Count == 0)
         {
+            Debug.Log("End of conversation");
             EndDialogue();
             return;
         }
