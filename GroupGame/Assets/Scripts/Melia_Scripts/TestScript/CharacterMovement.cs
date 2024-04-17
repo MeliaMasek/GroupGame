@@ -13,7 +13,10 @@ public class CharacterMovement : MonoBehaviour
 
     [SerializeField] private FloatData speed;
     private float minSpeed = 1.0f;
-
+    
+    public Vector3 resetPos;
+    public Quaternion resetPosRot;
+    
     private void Awake()
     {
         //playerInput = new LookChar(); //Which makes this is not needed
@@ -53,5 +56,16 @@ public class CharacterMovement : MonoBehaviour
             animator.SetBool("IsWalking", false);
 
         }
+    }
+    
+    public void ResetPlayerLocation()
+    {
+        Vector3 moveVector = resetPos - transform.position;
+
+        controller.Move(moveVector);
+        
+        transform.rotation = resetPosRot;
+
+        Debug.Log("Resetting player position and rotation.");
     }
 }

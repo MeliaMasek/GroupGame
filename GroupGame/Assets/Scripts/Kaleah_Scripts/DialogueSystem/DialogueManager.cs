@@ -10,6 +10,10 @@ public class DialogueManager : MonoBehaviour
     public Text dialogueText;
     public Animator animator;
     public Queue<string> sentences;
+    
+    public CountdownTimer clock;
+    public GameObject clockUI;
+
     void Start()
     {
         sentences = new Queue<string>();
@@ -27,6 +31,12 @@ public class DialogueManager : MonoBehaviour
         }
 
         DisplayNextSentence();
+        
+        if (clock != null)
+        {
+            clock.PauseTimer();
+            clockUI.SetActive(false);
+        }
     }
 
     public void DisplayNextSentence()
@@ -56,6 +66,11 @@ public class DialogueManager : MonoBehaviour
     public void EndDialogue()
     {
         animator.SetBool("IsOpen", false);
+        
+        if (clock != null)
+        {
+            clock.ResumeTimer();
+            clockUI.SetActive(true);
+        }
     }
-    
 }

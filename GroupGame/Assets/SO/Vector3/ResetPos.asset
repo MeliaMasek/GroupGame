@@ -12,6 +12,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4ae2508855cab5548b390f07d3fc6910, type: 3}
   m_Name: ResetPos
   m_EditorClassIdentifier: 
-  value: {x: 0, y: 0, z: 0}
-  shopResetPosition: {x: -39, y: 6.5, z: 32}
-  craftingResetPosition: {x: -18, y: 6.5, z: 14.5}
+  value: {x: -27, y: 5, z: 20}
