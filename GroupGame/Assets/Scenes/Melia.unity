@@ -2836,6 +2836,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 798217541}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 48944818}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
         m_MethodName: Resume
@@ -9641,14 +9653,14 @@ MonoBehaviour:
     - Race against the clock to create and sell as many potions as you can! Ingredients
       for your potions will spawn all around the kitchen. However, they do disappear,
       so be quick!
-    - Click on open button when by the cauldron to craft recipes. Add your desired
+    - Click on the open button when by the cauldron to craft recipes. Add your desired
       ingredients and click "craft". Just like that, you will have a potion! For
       every potion that you make, the more time is added to the clock!
     - If you are in a pinch for a certain ingredient, you can purchase it by clicking
       on the open button by Mr. Kitty the shopkeeper! Be careful though, he sells
       all his ingredients at an inflated value.
-    - 'Switch to the sell tab to sell your crafted potions and ingredients to increase
-      your score. '
+    - 'Switch to the sell tab in the shop to sell your crafted potions and unnecessary
+      ingredients to increase your score. '
     - Good luck and enjoy!
 --- !u!114 &693755789
 MonoBehaviour:
@@ -10677,7 +10689,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &798217542
 RectTransform:
   m_ObjectHideFlags: 0
@@ -11566,6 +11578,18 @@ MonoBehaviour:
         m_TargetAssemblyTypeName: UnityEngine.AudioSource, UnityEngine
         m_MethodName: Play
         m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 798217541}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -19595,7 +19619,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: -0.40000153, y: -0.000042915344}
+  m_AnchoredPosition: {x: -0.40000153, y: -0.00004386902}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &1529641784
@@ -19838,6 +19862,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 798217541}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
+        m_CallState: 2
       - m_Target: {fileID: 798217546}
         m_TargetAssemblyTypeName: CountdownTimer, Assembly-CSharp
         m_MethodName: ResetTimer
@@ -19862,12 +19898,60 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 0fa3041c510a9a94fb061834737cf92b, type: 2}
+        m_TargetAssemblyTypeName: IntData, Assembly-CSharp
+        m_MethodName: UpdateValue
+        m_Mode: 3
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
       - m_Target: {fileID: 228937206}
         m_TargetAssemblyTypeName: TextLabelBehavior, Assembly-CSharp
         m_MethodName: UpdateLabel
         m_Mode: 2
         m_Arguments:
           m_ObjectArgument: {fileID: 11400000, guid: 0fa3041c510a9a94fb061834737cf92b, type: 2}
+          m_ObjectArgumentAssemblyTypeName: IntData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 11400000, guid: 04bce73576328a74baaf7d1a78f85ed9, type: 2}
+        m_TargetAssemblyTypeName: IntData, Assembly-CSharp
+        m_MethodName: CompareValue
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 0fa3041c510a9a94fb061834737cf92b, type: 2}
+          m_ObjectArgumentAssemblyTypeName: IntData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 170298155}
+        m_TargetAssemblyTypeName: TextLabelBehaviorNew, Assembly-CSharp
+        m_MethodName: UpdateLabel
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 0fa3041c510a9a94fb061834737cf92b, type: 2}
+          m_ObjectArgumentAssemblyTypeName: IntData, Assembly-CSharp
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 170298155}
+        m_TargetAssemblyTypeName: TextLabelBehaviorNew, Assembly-CSharp
+        m_MethodName: UpdateLabel
+        m_Mode: 2
+        m_Arguments:
+          m_ObjectArgument: {fileID: 11400000, guid: 04bce73576328a74baaf7d1a78f85ed9, type: 2}
           m_ObjectArgumentAssemblyTypeName: IntData, Assembly-CSharp
           m_IntArgument: 0
           m_FloatArgument: 0
@@ -19994,18 +20078,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: 0}
-        m_TargetAssemblyTypeName: ResetPos, Assembly-CSharp
-        m_MethodName: ResetPlayerLocation
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1560938648
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -20060,15 +20132,17 @@ MonoBehaviour:
     name: How to play
     sentences:
     - Hello! Welcome to Sable's kitchen!
-    - Race against the clock to create as many potions as you can! Ingredients for
-      your potions will spawn all around the kitchen. However, they do disappear,
+    - Race against the clock to create and sell as many potions as you can! Ingredients
+      for your potions will spawn all around the kitchen. However, they do disappear,
       so be quick!
-    - Click on the cauldron to craft recipes. Add your desired ingredients and click
-      "craft". Just like that, you will have a potion! For every potion that you
-      make, the more time is added to the clock to create more potions!
+    - Click on the open button when by the cauldron to craft recipes. Add your desired
+      ingredients and click "craft". Just like that, you will have a potion! For
+      every potion that you make, the more time is added to the clock!
     - If you are in a pinch for a certain ingredient, you can purchase it by clicking
-      on Mr. Kitty the shopkeeper! Be careful though, he sells all his ingredients
-      at an inflated value.
+      on the open button by Mr. Kitty the shopkeeper! Be careful though, he sells
+      all his ingredients at an inflated value.
+    - 'Switch to the sell tab in the shop to sell your crafted potions and unnecessary
+      ingredients to increase your score. '
     - Good luck and enjoy!
 --- !u!1 &1562555433
 GameObject:
@@ -25116,6 +25190,18 @@ MonoBehaviour:
           m_FloatArgument: 0
           m_StringArgument: 
           m_BoolArgument: 0
+        m_CallState: 2
+      - m_Target: {fileID: 798217541}
+        m_TargetAssemblyTypeName: UnityEngine.GameObject, UnityEngine
+        m_MethodName: SetActive
+        m_Mode: 6
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 1
         m_CallState: 2
       - m_Target: {fileID: 48944818}
         m_TargetAssemblyTypeName: PauseMenu, Assembly-CSharp
